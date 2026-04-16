@@ -14,6 +14,7 @@ import Post from "./pages/Post";
 import Servico from "./pages/Servico";
 import Case from "./pages/Case";
 import NotFound from "./pages/NotFound";
+import { ExportLeads } from "./pages/ExportLeads";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
               <Route path="/post" element={<Post />} />
               <Route path="/servico/:id" element={<Servico />} />
               <Route path="/case/:id" element={<Case />} />
+              <Route path="/export-leads" element={<ExportLeads />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
