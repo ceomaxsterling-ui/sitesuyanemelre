@@ -336,14 +336,12 @@ export const Diagnostico: React.FC = () => {
         console.error('Erro ao salvar no banco:', dbError);
       }
 
-      // 2. Enviar e-book via Resend
-      const res = await fetch('/api/send-ebook', {
+      // 2. Enviar e-book via Resend (não bloqueia o sucesso)
+      fetch('/api/send-ebook', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
-      });
-
-      if (!res.ok) throw new Error('Erro no servidor');
+      }).catch(err => console.error('Falha ao enviar e-mail via Resend:', err));
 
       setIsSubmitted(true);
     } catch (err) {
