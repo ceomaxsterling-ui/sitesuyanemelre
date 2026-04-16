@@ -319,29 +319,26 @@ export const Diagnostico: React.FC = () => {
   const submitForm = async () => {
     setIsSending(true);
     try {
-      // 1. Salvar lead no banco de dados
-      const { error: dbError } = await supabase.from('diagnostic_leads').insert({
-        nome: formData.nome,
-        email: formData.email,
-        whatsapp: formData.whatsapp,
-        objetivo: formData.objetivo || null,
-        tempo_investimento: formData.tempo_investimento || null,
-        carteira_estruturada: formData.carteira_estruturada || null,
-        incomodo_investimentos: formData.incomodo_investimentos || null,
-        investimento_ano: formData.investimento_ano || null,
-        analise_inicial: formData.analise_inicial || null,
+      // Envia tudo para a Edge Function: salva no banco + envia emails via Resend
+      const { error } = await supabase.functions.invoke('send-ebook', {
+        body: {
+          nome: formData.nome,
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          objetivo: formData.objetivo || null,
+          tempo_investimento: formData.tempo_investimento || null,
+          carteira_estruturada: formData.carteira_estruturada || null,
+          incomodo_investimentos: formData.incomodo_investimentos || null,
+          investimento_ano: formData.investimento_ano || null,
+          analise_inicial: formData.analise_inicial || null,
+        },
       });
 
-      if (dbError) {
-        console.error('Erro ao salvar no banco:', dbError);
+      if (error) {
+        console.error('Erro ao enviar:', error);
+        alert('Ocorreu um erro ao enviar. Tente novamente.');
+        return;
       }
-
-      // 2. Enviar e-book via Resend (não bloqueia o sucesso)
-      fetch('/api/send-ebook', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      }).catch(err => console.error('Falha ao enviar e-mail via Resend:', err));
 
       setIsSubmitted(true);
     } catch (err) {
