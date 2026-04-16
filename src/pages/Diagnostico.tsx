@@ -319,7 +319,8 @@ export const Diagnostico: React.FC = () => {
   const submitForm = async () => {
     setIsSending(true);
     try {
-      const { error } = await supabase.from('diagnostic_leads').insert({
+      // 1. Salvar lead no banco de dados
+      const { error: dbError } = await supabase.from('diagnostic_leads').insert({
         nome: formData.nome,
         email: formData.email,
         whatsapp: formData.whatsapp,
@@ -331,11 +332,22 @@ export const Diagnostico: React.FC = () => {
         analise_inicial: formData.analise_inicial || null,
       });
 
-      if (error) throw error;
+      if (dbError) {
+        console.error('Erro ao salvar no banco:', dbError);
+      }
+
+      // 2. Enviar e-book via Resend
+      const res = await fetch('/api/send-ebook', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error('Erro no servidor');
 
       setIsSubmitted(true);
     } catch (err) {
-      console.error('Erro ao salvar diagnóstico:', err);
+      console.error('Falha ao enviar:', err);
       alert('Ocorreu um erro ao enviar. Tente novamente.');
     } finally {
       setIsSending(false);
