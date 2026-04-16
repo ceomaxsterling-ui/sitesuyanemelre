@@ -13,7 +13,24 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        lexend: ["Lexend", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
       colors: {
+        navy: {
+          DEFAULT: "#1E293B",
+          light: "#334155",
+        },
+        executive: "#475569",
+        silver: {
+          DEFAULT: "#E2E8F0",
+          light: "#FFFFFF",
+        },
+        surface: {
+          DEFAULT: "#FFFFFF",
+          hover: "#F8FAFC",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -65,20 +82,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
