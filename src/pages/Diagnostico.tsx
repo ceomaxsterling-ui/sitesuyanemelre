@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { supabase } from '@/integrations/supabase/client';
 
 // ─────────────────────────────────────
 // TYPES
@@ -318,17 +319,23 @@ export const Diagnostico: React.FC = () => {
   const submitForm = async () => {
     setIsSending(true);
     try {
-      const res = await fetch('/api/send-ebook', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+      const { error } = await supabase.from('diagnostic_leads').insert({
+        nome: formData.nome,
+        email: formData.email,
+        whatsapp: formData.whatsapp,
+        objetivo: formData.objetivo || null,
+        tempo_investimento: formData.tempo_investimento || null,
+        carteira_estruturada: formData.carteira_estruturada || null,
+        incomodo_investimentos: formData.incomodo_investimentos || null,
+        investimento_ano: formData.investimento_ano || null,
+        analise_inicial: formData.analise_inicial || null,
       });
 
-      if (!res.ok) throw new Error('Erro no servidor');
+      if (error) throw error;
 
       setIsSubmitted(true);
     } catch (err) {
-      console.error('Falha ao enviar e-mail via Resend', err);
+      console.error('Erro ao salvar diagnóstico:', err);
       alert('Ocorreu um erro ao enviar. Tente novamente.');
     } finally {
       setIsSending(false);
