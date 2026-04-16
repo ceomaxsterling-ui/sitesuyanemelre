@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Suyane Melre CFP® | Consultoria Financeira Independente</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Lexend:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: "#1E293B", // Deep Navy
+                            darker: "#0F172A",
+                        },
+                        executive: {
+                            DEFAULT: "#475569", // Executive Grey
+                            light: "#94A3B8",
+                        },
+                        silver: {
+                            DEFAULT: "#E2E8F0", // Metallic Silver
+                            light: "#F8FAFC",
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Lexend", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        'xl': '1.5rem',
+                        '2xl': '2rem',
+                        '3xl': '2.5rem',
+                        '4xl': '3rem',
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Lexend', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .testimonial-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .testimonial-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        .step-item:hover .step-icon {
+            @apply bg-navy text-white;
+        }
+    </style>
+</head>
+<body class="bg-silver-light text-navy transition-colors duration-300">
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-silver">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-navy rounded-lg flex items-center justify-center text-white font-bold">S</div>
+<span class="text-xl font-bold tracking-tight text-navy">Suyane Melre <span class="text-executive-light text-sm font-normal">CFP®</span></span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-medium text-sm text-executive">
+<a class="hover:text-navy transition-colors" href="#">Consultoria</a>
+<a class="hover:text-navy transition-colors" href="#">Trajetória</a>
+<a class="hover:text-navy transition-colors" href="#">Investimentos</a>
+<a class="hover:text-navy transition-colors" href="#">Blog</a>
+</div>
+<div>
+<button class="px-5 py-2.5 bg-navy text-white rounded-full text-sm font-semibold hover:bg-slate-800 transition-all">Começar Agora</button>
+</div>
+</div>
+</nav>
+<header class="relative pt-12 pb-20 lg:pt-28 lg:pb-40 overflow-hidden bg-silver-light border-b border-silver">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8 z-10 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-navy/5 text-navy rounded-full text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">verified</span> Certificação Internacional
+            </div>
+<h1 class="text-4xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-navy">
+                Consultoria Independente: Seu <span class="text-executive">Patrimônio</span> no Centro de Tudo
+            </h1>
+<p class="text-lg text-executive max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                Alinhamento total de interesses para construir sua liberdade financeira através de um planejamento personalizado e estratégico.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<button class="px-8 py-4 bg-navy text-white rounded-full text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">Começar Agora</button>
+<button class="px-8 py-4 bg-white border border-silver rounded-full text-lg font-bold flex items-center justify-center gap-2 hover:bg-slate-50 transition-colors">
+                    Ver Diferenciais
+                </button>
+</div>
+</div>
+<div class="relative h-[500px] hidden lg:block">
+<div class="absolute top-0 right-0 w-[450px] h-[550px] bg-silver rounded-3xl overflow-hidden shadow-2xl border border-silver">
+<img alt="Suyane Melre" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDASsiPF_cYjYw0953gpdtsvsG129BJT-PUGhF2T7BfeLVNUEMaApVeIBPxhbxsLQGTZZTqdRUqdLUZUv5lWB5uGBUQng-aCl6yPP_x53RFeuzazQihvfTiEh2WJeYA6tx12sqbclhFRK8BUNhmXwTutPNUs5QtmLDIua3vALIBloSOWgEABFH6p8VUE_xOYDmvW3gVhRDiVVuedn6Z9qPEvkNzASRQyiSvdGlCpSW1e0ud9MxkS6hb3wDadnD0W4CtsrZDjMzueb7Y"/>
+</div>
+<div class="absolute -left-10 top-10 glass-card p-6 rounded-2xl shadow-xl w-64">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase text-executive-light">Metas de Investimento</span>
+<span class="material-symbols-outlined text-navy">insights</span>
+</div>
+<div class="space-y-3">
+<div class="h-2 w-full bg-silver rounded-full overflow-hidden">
+<div class="h-full bg-navy w-3/4"></div>
+</div>
+<p class="text-sm font-semibold">Liberdade Financeira <span class="float-right">75%</span></p>
+</div>
+</div>
+<div class="absolute bottom-20 -left-4 glass-card p-6 rounded-2xl shadow-xl w-72">
+<div class="text-xs font-bold uppercase text-executive-light mb-2">Evolução Patrimonial</div>
+<div class="flex items-end gap-1 h-24">
+<div class="w-full bg-silver rounded-t h-1/3"></div>
+<div class="w-full bg-silver rounded-t h-1/2"></div>
+<div class="w-full bg-silver rounded-t h-3/5"></div>
+<div class="w-full bg-navy rounded-t h-full"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="border-b border-silver bg-white py-10 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-12 opacity-50 grayscale">
+<div class="flex items-center gap-2 font-display font-bold text-lg md:text-xl uppercase tracking-widest text-executive-light">Certificação CFP®</div>
+<div class="flex items-center gap-2 font-display font-bold text-lg md:text-xl uppercase tracking-widest text-executive-light">Anbima CEA</div>
+<div class="flex items-center gap-2 font-display font-bold text-lg md:text-xl uppercase tracking-widest text-executive-light">CVM Registrada</div>
+<div class="flex items-center gap-2 font-display font-bold text-lg md:text-xl uppercase tracking-widest text-executive-light">Planejar</div>
+</div>
+</section>
+<section class="py-20 lg:py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 space-y-4">
+<span class="text-sm font-bold text-navy uppercase tracking-widest">Nossos Serviços</span>
+<h2 class="text-3xl lg:text-5xl font-bold text-navy leading-tight">Consultoria Financeira Sob Medida para Você</h2>
+<p class="text-executive max-w-2xl mx-auto">Soluções exclusivas para gestão, proteção e crescimento do seu patrimônio.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group bg-silver-light rounded-3xl p-8 border border-silver flex flex-col h-full hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[10px] font-bold text-executive-light border border-silver px-2 py-1 rounded-full uppercase">Alocação</span>
+<span class="material-symbols-outlined text-navy group-hover:rotate-45 transition-transform">arrow_forward</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-navy">Planejamento de Investimentos</h3>
+<p class="text-sm text-executive mb-8 leading-relaxed">Estratégias personalizadas para alocação de ativos globais e diversificação inteligente.</p>
+<div class="mt-auto aspect-square rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+<img alt="Investimentos" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9aYb1x85POEb9I2jPKDNICLi_7tFrbM20isaUVthmsXSGEYohlP0DZcuP43ptVyYQycgtoP8H3CJ4cukZrLYTmNBvmUH_vI2Lo7b3PV3OUBv2bFGY9-9oFyQhroniie4DJCi7GfQWRIu0mdZ7LjdpOtPzi-gB7LsXSSOUDnWI7O1el9_gOsjRsZWNPVuAOCh24fjs2McbXo0O91RpykaJRxPqTzXKlj3oTR--5SuU4sWp84fbqnTl4_-IIiqsXyW7_0_V2YFZQRlZ"/>
+</div>
+</div>
+<div class="group bg-silver-light rounded-3xl p-8 border border-silver flex flex-col h-full hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[10px] font-bold text-executive-light border border-silver px-2 py-1 rounded-full uppercase">Gestão</span>
+<span class="material-symbols-outlined text-navy group-hover:rotate-45 transition-transform">arrow_forward</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-navy">Gestão de Patrimônio</h3>
+<p class="text-sm text-executive mb-8 leading-relaxed">Acompanhamento contínuo da sua jornada financeira com foco em metas reais.</p>
+<div class="mt-auto aspect-square rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+<img alt="Gestão" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDASsiPF_cYjYw0953gpdtsvsG129BJT-PUGhF2T7BfeLVNUEMaApVeIBPxhbxsLQGTZZTqdRUqdLUZUv5lWB5uGBUQng-aCl6yPP_x53RFeuzazQihvfTiEh2WJeYA6tx12sqbclhFRK8BUNhmXwTutPNUs5QtmLDIua3vALIBloSOWgEABFH6p8VUE_xOYDmvW3gVhRDiVVuedn6Z9qPEvkNzASRQyiSvdGlCpSW1e0ud9MxkS6hb3wDadnD0W4CtsrZDjMzueb7Y"/>
+</div>
+</div>
+<div class="group bg-silver-light rounded-3xl p-8 border border-silver flex flex-col h-full hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[10px] font-bold text-executive-light border border-silver px-2 py-1 rounded-full uppercase">Proteção</span>
+<span class="material-symbols-outlined text-navy group-hover:rotate-45 transition-transform">arrow_forward</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-navy">Planejamento Sucessório</h3>
+<p class="text-sm text-executive mb-8 leading-relaxed">Proteção familiar e eficiência tributária na transmissão de bens e legados.</p>
+<div class="mt-auto aspect-square rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+<img alt="Sucessão" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDASsiPF_cYjYw0953gpdtsvsG129BJT-PUGhF2T7BfeLVNUEMaApVeIBPxhbxsLQGTZZTqdRUqdLUZUv5lWB5uGBUQng-aCl6yPP_x53RFeuzazQihvfTiEh2WJeYA6tx12sqbclhFRK8BUNhmXwTutPNUs5QtmLDIua3vALIBloSOWgEABFH6p8VUE_xOYDmvW3gVhRDiVVuedn6Z9qPEvkNzASRQyiSvdGlCpSW1e0ud9MxkS6hb3wDadnD0W4CtsrZDjMzueb7Y"/>
+</div>
+</div>
+<div class="group bg-silver-light rounded-3xl p-8 border border-silver flex flex-col h-full hover:shadow-xl transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[10px] font-bold text-executive-light border border-silver px-2 py-1 rounded-full uppercase">Riscos</span>
+<span class="material-symbols-outlined text-navy group-hover:rotate-45 transition-transform">arrow_forward</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-navy">Análise de Risco</h3>
+<p class="text-sm text-executive mb-8 leading-relaxed">Identificação e mitigação de ameaças ao seu crescimento financeiro estável.</p>
+<div class="mt-auto aspect-square rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+<img alt="Risco" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh2U5G9FSm0z3i58H15hHiopdwb1HKoOU6DjkxHR0Va_QTOXi_WigT5RL2JmzZ6Rf5U0CvZ0sKhLOrsomx7ZL-duJ0Udp45RTtJoX9gSbeAL3ZNltSdOqoLQ3e5PUfQTwe5M6UCAV63VwlHQ_nvDEhFohXK8sUmwpXY-GR2gXSU_AE0TwG-ybolbe9xpLdf1b3Qt8maBfZ2ZqCBAiJyq4p1bDuUJzNlK_mE6S7Lg-dSV0HpXhLWTMwbN9e0j0WzjSqiHmFYNwOBXTZ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 lg:py-24 bg-silver-light">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 space-y-10">
+<div class="space-y-4">
+<span class="text-sm font-bold text-navy uppercase tracking-widest">Metodologia</span>
+<h2 class="text-3xl lg:text-5xl font-bold text-navy leading-tight">Meu Processo de Consultoria, Simplificado</h2>
+<p class="text-executive text-lg">Um caminho estruturado para sua segurança financeira.</p>
+</div>
+<div class="space-y-4">
+<div class="step-item group flex items-start gap-5 p-6 bg-white rounded-2xl border border-silver hover:border-navy transition-all cursor-pointer">
+<div class="step-icon w-10 h-10 rounded-full bg-silver flex items-center justify-center shrink-0 transition-colors">
+<span class="text-sm font-bold">01</span>
+</div>
+<div>
+<h4 class="font-bold text-navy text-lg mb-1">Entenda seus Objetivos</h4>
+<p class="text-sm text-executive">Mapeamento detalhado das suas necessidades e sonhos financeiros.</p>
+</div>
+</div>
+<div class="step-item group flex items-start gap-5 p-6 bg-white rounded-2xl border border-silver hover:border-navy transition-all cursor-pointer">
+<div class="step-icon w-10 h-10 rounded-full bg-silver flex items-center justify-center shrink-0 transition-colors">
+<span class="text-sm font-bold">02</span>
+</div>
+<div>
+<h4 class="font-bold text-navy text-lg mb-1">Análise de Carteira</h4>
+<p class="text-sm text-executive">Diagnóstico técnico do seu portfólio atual e eficiência de custos.</p>
+</div>
+</div>
+<div class="step-item group flex items-start gap-5 p-6 bg-white rounded-2xl border border-silver hover:border-navy transition-all cursor-pointer">
+<div class="step-icon w-10 h-10 rounded-full bg-silver flex items-center justify-center shrink-0 transition-colors">
+<span class="text-sm font-bold">03</span>
+</div>
+<div>
+<h4 class="font-bold text-navy text-lg mb-1">Estratégia sob Medida</h4>
+<p class="text-sm text-executive">Desenvolvimento do plano tático para alocação e proteção.</p>
+</div>
+</div>
+<div class="step-item group flex items-start gap-5 p-6 bg-white rounded-2xl border border-silver hover:border-navy transition-all cursor-pointer">
+<div class="step-icon w-10 h-10 rounded-full bg-silver flex items-center justify-center shrink-0 transition-colors">
+<span class="text-sm font-bold">04</span>
+</div>
+<div>
+<h4 class="font-bold text-navy text-lg mb-1">Acompanhamento Contínuo</h4>
+<p class="text-sm text-executive">Monitoramento periódico e ajustes conforme mudanças do mercado.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative aspect-square lg:aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
+<img alt="Suyane Melre em consulta" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9aYb1x85POEb9I2jPKDNICLi_7tFrbM20isaUVthmsXSGEYohlP0DZcuP43ptVyYQycgtoP8H3CJ4cukZrLYTmNBvmUH_vI2Lo7b3PV3OUBv2bFGY9-9oFyQhroniie4DJCi7GfQWRIu0mdZ7LjdpOtPzi-gB7LsXSSOUDnWI7O1el9_gOsjRsZWNPVuAOCh24fjs2McbXo0O91RpykaJRxPqTzXKlj3oTR--5SuU4sWp84fbqnTl4_-IIiqsXyW7_0_V2YFZQRlZ"/>
+<div class="absolute inset-0 bg-navy/10"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 lg:py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 space-y-4">
+<span class="text-sm font-bold text-navy uppercase tracking-widest">Insights &amp; Estratégias</span>
+<h2 class="text-3xl lg:text-5xl font-bold text-navy">Conteúdo Educativo</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<article class="group space-y-6">
+<div class="aspect-video rounded-3xl overflow-hidden border border-silver shadow-sm">
+<img alt="Macroeconomia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZFPcIj_zEI8EEoZNsg7rFeIiCbv66ENH84JWb8pBSKuaycY22s6WiO6d9Pdq4F-D1YPSnKrkKQ-s2_ZsaRLj2qmNiXj-HAzBL-UvbnsNECpv_dMRUAar8i-_SoZtOM3OZKTX6QwXsnPeE4_etlNSGImhfHnnyqFw_NPP5H-xGrdGjTF1F5cuzcP38_XIY-yJnnEhntgyA2CDjllXBDt4zlZzac9i6hfG4it0l4EYKA5trttS8hVGWSUka2_NzMLxDh7iTmThQ5JEQ"/>
+</div>
+<div class="space-y-3">
+<span class="text-xs font-bold text-executive-light uppercase">14 DE DEZEMBRO, 2023</span>
+<h3 class="text-xl font-bold text-navy group-hover:text-executive transition-colors leading-tight">O impacto da Selic no seu portfólio de longo prazo.</h3>
+<p class="text-executive text-sm leading-relaxed line-clamp-2">Entenda como a variação da taxa básica de juros afeta seus investimentos em renda fixa e variável.</p>
+</div>
+</article>
+<article class="group space-y-6">
+<div class="aspect-video rounded-3xl overflow-hidden border border-silver shadow-sm">
+<img alt="Internacional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGfdfI3tKwQuMPtb0fy_XEYC0AmnIAN2l-jldWsIok9Nrujldfq7A-2x2soR6kZ_ek2JKynaEaFix-29xXJIx7p6dLb_XtwpXuVcwYNKs-QeppzdZiJtYLE0G7PraFDZlVx9cCh50_8O-VkXaS9nCW9Vn1GRCwPaKksercOKyoL8AO-LzaXNk1WU36KL2EFqJ9JXiqHATUD98G04I0x30Nr4IsWgqZDHJjOcc-doOaFxk-2o1yrS8DZ6OIxgzoH29dDmMrlAOqd7QI"/>
+</div>
+<div class="space-y-3">
+<span class="text-xs font-bold text-executive-light uppercase">10 DE DEZEMBRO, 2023</span>
+<h3 class="text-xl font-bold text-navy group-hover:text-executive transition-colors leading-tight">Diversificação internacional: como e por onde começar?</h3>
+<p class="text-executive text-sm leading-relaxed line-clamp-2">Aprenda a proteger seu patrimônio através de ativos globais dolarizados.</p>
+</div>
+</article>
+<article class="group space-y-6">
+<div class="aspect-video rounded-3xl overflow-hidden border border-silver shadow-sm">
+<img alt="Planejamento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh2U5G9FSm0z3i58H15hHiopdwb1HKoOU6DjkxHR0Va_QTOXi_WigT5RL2JmzZ6Rf5U0CvZ0sKhLOrsomx7ZL-duJ0Udp45RTtJoX9gSbeAL3ZNltSdOqoLQ3e5PUfQTwe5M6UCAV63VwlHQ_nvDEhFohXK8sUmwpXY-GR2gXSU_AE0TwG-ybolbe9xpLdf1b3Qt8maBfZ2ZqCBAiJyq4p1bDuUJzNlK_mE6S7Lg-dSV0HpXhLWTMwbN9e0j0WzjSqiHmFYNwOBXTZ"/>
+</div>
+<div class="space-y-3">
+<span class="text-xs font-bold text-executive-light uppercase">05 DE DEZEMBRO, 2023</span>
+<h3 class="text-xl font-bold text-navy group-hover:text-executive transition-colors leading-tight">Seguro de vida como ferramenta de liquidez sucessória.</h3>
+<p class="text-executive text-sm leading-relaxed line-clamp-2">Como utilizar produtos de seguro para garantir a tranquilidade da sua família no futuro.</p>
+</div>
+</article>
+</div>
+<div class="mt-12 text-center">
+<button class="px-8 py-4 bg-navy text-white rounded-full font-bold inline-flex items-center gap-2 hover:bg-slate-800 transition-colors">
+                Ver Todos os Artigos <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<section class="py-20 lg:py-24 bg-silver-light overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="text-sm font-bold text-navy uppercase tracking-widest block mb-2">Depoimentos</span>
+<h2 class="text-3xl lg:text-5xl font-bold text-navy leading-tight">O que dizem os clientes</h2>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-silver bg-white flex items-center justify-center hover:bg-silver transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-silver bg-white flex items-center justify-center hover:bg-silver transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="testimonial-scroll flex overflow-x-auto gap-8 pb-8 snap-x">
+<div class="min-w-[300px] md:min-w-[450px] bg-white p-10 rounded-3xl border border-silver snap-start">
+<span class="material-symbols-outlined text-4xl text-silver mb-6">format_quote</span>
+<p class="text-lg text-executive italic mb-8 leading-relaxed">"Trabalhar com a Suyane mudou minha visão sobre investimentos. Hoje sinto que meu patrimônio está realmente seguro e alinhado aos meus sonhos."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-silver overflow-hidden">
+<img alt="Ricardo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwRkqc93ylk_QaTKXSX7M7aTHP55nR6AYj6HJvFIKeWJI1R-0yS0KL_UuFdY3bYDaLAHpBcfjlzS2SCKBL6PcxwoFxySsQ41QfgAwd3d-vY9fq8UO_TcwtrelMQ5W5DLuFDHsLoPFZ-kwyLqveFkFkhBW0qPVoifonIZE8kHPURbbFBK0ufnh7gpS92YOzjRAcJsRmrDJBN9LqA1epWbelgP1yR2cB9CcLGzPd6IgttB0kt2hvzePGy-5HmtxLzozbTCdKakLtWqt9"/>
+</div>
+<div>
+<h4 class="font-bold text-navy">Ricardo Souza</h4>
+<p class="text-xs text-executive-light font-medium uppercase">Empresário, Tech CEO</p>
+</div>
+</div>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] bg-white p-10 rounded-3xl border border-silver snap-start">
+<span class="material-symbols-outlined text-4xl text-silver mb-6">format_quote</span>
+<p class="text-lg text-executive italic mb-8 leading-relaxed">"O planejamento sucessório que fizemos foi essencial para a proteção da minha família. Profissionalismo e competência ímpares no mercado."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-silver overflow-hidden">
+<img alt="Ana" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxaBIwphAVVQqFUOE_QvbRfTipqAC_yuJyMw9IzUbE0HZ4JN5GLf66vjAXHvCbSZLntB_Nj19VMO6eQZlel3HbKlSRBKeolDwU-3FHOlVF0XcB-IDlvjD3g6EiQ2OWZ0k1g0hZI5L42GpnJKsJETzLjUFiK29Ye8e3AlApn1LHgI226751OMZwmfu9HWtQExCZqKXuZMs4cv_OcbloOM1ZKeS8woelVXoChYQC9YCgrY9N6153-QhKIRdMdVL6V9XvhqQiS2zEK5X3"/>
+</div>
+<div>
+<h4 class="font-bold text-navy">Ana Paula</h4>
+<p class="text-xs text-executive-light font-medium uppercase">Médica Especialista</p>
+</div>
+</div>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] bg-white p-10 rounded-3xl border border-silver snap-start">
+<span class="material-symbols-outlined text-4xl text-silver mb-6">format_quote</span>
+<p class="text-lg text-executive italic mb-8 leading-relaxed">"Encontrei na consultoria independente da Suyane o alinhamento de interesses que eu não tinha nos bancos tradicionais. Recomendo fortemente."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-silver overflow-hidden">
+<img alt="Julio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ue2sziwyXOHz_YsU9pJZ7F9oeX69BXJg_BezRj5Ai7gZjPgj3rcPlMUtyNe5oLPwJQRI82TtXcPfYtKEcQSi5Irofv1ev5WBxV3XgF9STObdzdZvSvI5fTASDFDOWfHRq8ZIpbp3vgk1q3ikxmvHOexZjxv2nPXCYc4AIp0JtE0yt420bMr8CzU5NfdLOvEmsZpD0wSvanUiiL_Acg7F8JL3q9VTKiA2aRRfC20k6KYljc2KmaJHZjB0nw2vyRBnvnnRXUzyVNCe"/>
+</div>
+<div>
+<h4 class="font-bold text-navy">Julio Mendes</h4>
+<p class="text-xs text-executive-light font-medium uppercase">Diretor Financeiro</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 mb-24 mt-12">
+<div class="bg-navy rounded-[3rem] p-12 lg:p-24 text-center text-white relative overflow-hidden shadow-2xl">
+<div class="relative z-10 max-w-2xl mx-auto space-y-8">
+<h2 class="text-3xl lg:text-5xl font-bold leading-tight">O próximo passo para sua segurança financeira começa aqui</h2>
+<p class="text-lg text-silver/70">Agende uma reunião inicial de diagnóstico sem custos e entenda como podemos potencializar seu patrimônio.</p>
+<button class="px-10 py-5 bg-white text-navy rounded-full text-xl font-bold shadow-lg hover:shadow-white/20 hover:-translate-y-1 transition-all">Agendar Consultoria</button>
+</div>
+</div>
+</section>
+<footer class="pt-24 pb-12 bg-white border-t border-silver relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-2 mb-8">
+<div class="w-10 h-10 bg-navy rounded-xl flex items-center justify-center text-white font-bold text-xl">S</div>
+<span class="text-2xl font-black tracking-tight text-navy">Suyane Melre</span>
+</div>
+<p class="text-executive mb-8 max-w-xs leading-relaxed text-sm">Construindo liberdade financeira através de consultoria independente e alinhamento total de interesses.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-silver flex items-center justify-center hover:bg-silver-light transition-colors" href="#"><span class="material-symbols-outlined text-sm">link</span></a>
+<a class="w-10 h-10 rounded-full border border-silver flex items-center justify-center hover:bg-silver-light transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-navy mb-6 uppercase tracking-widest text-xs">Consultoria</h4>
+<ul class="space-y-4 text-executive text-sm">
+<li><a class="hover:text-navy transition-colors" href="#">Investimentos</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Planejamento Tax</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Wealth Management</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Sucessão</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-navy mb-6 uppercase tracking-widest text-xs">Sobre</h4>
+<ul class="space-y-4 text-executive text-sm">
+<li><a class="hover:text-navy transition-colors" href="#">Minha Trajetória</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Certificações</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Metodologia</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-navy mb-6 uppercase tracking-widest text-xs">Legal</h4>
+<ul class="space-y-4 text-executive text-sm">
+<li><a class="hover:text-navy transition-colors" href="#">Termos de Uso</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Privacidade</a></li>
+<li><a class="hover:text-navy transition-colors" href="#">Disclosures</a></li>
+</ul>
+</div>
+<div class="lg:col-span-1">
+<h4 class="font-bold text-navy mb-6 uppercase tracking-widest text-xs">Contato</h4>
+<div class="p-4 bg-silver-light rounded-2xl flex items-center gap-3">
+<span class="material-symbols-outlined text-navy">mail</span>
+<span class="text-xs font-medium truncate">contato@suyanemelre.com.br</span>
+</div>
+</div>
+</div>
+<div class="relative py-8 md:py-12 pointer-events-none select-none">
+<h2 class="text-[14vw] font-black leading-none tracking-tighter text-silver/30 uppercase text-center w-full break-words">
+                Suyane Melre
+            </h2>
+</div>
+<div class="pt-12 border-t border-silver flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[10px] text-executive-light text-center md:text-left">© 2024 Suyane Melre CFP®. Todos os direitos reservados. As informações contidas neste site não configuram oferta ou recomendação.</p>
+<div class="flex items-center gap-6 grayscale opacity-40 h-6">
+<img alt="Anbima" class="h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYIoBt4foL0K_hvlKTT3lr1i4VnQA4LZURQ2lqBFYsegzv84LptRBmmd-D9HTpigbok9T8ac7rdUnUB7Vwi8sQHUdhLoYJo56Ph0E1PiHKH5KCzW-Nzc5RSzXwiHS7UvNYRWMKnnuao4oUujtUleWMOZjpbfzowVMeq7-RWAT-rOPtfj3TA1ySt-uuVG2Dbznb23ZCAfRupoYblWbqMdbmGlac8JLEHg4kne4GR8EYlPclczT55-fy-k7V3n7fMrZ-Z8QO6Ja678_f"/>
+<img alt="CVM" class="h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV0MkkomYvN3v6K5J3NypGstUk3RTxPizfyg10mIlTFvyGPbNtyGxVMqHmzFhtXdVLeQSc4lSk3Hh6R2EhVZklPIkHblpRJT5rGGdyRPUyxNhCoJz_o0q-odX5OCQ0Hi55R2XHvs4zwoCPeQQ-4XjKzBA_gWGbSU1gf7fn_PuovV3ExDFgogWldZZnH0Y76gzJSNmugi7h6p32FGeqCkOlTcxlqEI2Zb2I02hBMbhNLYiqaPoXmz2T_-8TwBO_Px6T3sMSjH2vQ3ue"/>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

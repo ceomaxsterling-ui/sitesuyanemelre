@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "install": "cd app && npm install",
+    "build": "cd app && npm run build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "react-router-dom": "^7.13.1",
+    "tailwindcss": "^4.2.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.103.0",
+    "@vercel/node": "^5.7.4",
+    "resend": "^6.10.0"
+  }
+}

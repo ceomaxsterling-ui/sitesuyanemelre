@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1d283a",
+                        "background-light": "#f6f7f7",
+                        "background-dark": "#16181c",
+                        "executive-grey": "#475569",
+                        "silver-light": "#f8fafc"
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen pb-20">
+<!-- Header Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">account_balance_wallet</span>
+<h1 class="font-bold text-primary tracking-tight">Suyane Melre</h1>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Blog Hero Section -->
+<section class="bg-primary px-6 py-12 text-center">
+<h2 class="text-silver-light text-3xl font-bold leading-tight mb-4">Insights &amp; Educação Financeira</h2>
+<p class="text-silver-light/70 text-sm leading-relaxed max-w-xs mx-auto">
+            Análises profundas sobre tendências de mercado e estratégias de preservação de patrimônio.
+        </p>
+</section>
+<!-- Category Filters -->
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar">
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-primary px-6 text-white text-sm font-medium">
+            Todos
+        </button>
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white border border-primary/10 px-6 text-executive-grey text-sm font-medium">
+            Macroeconomia
+        </button>
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white border border-primary/10 px-6 text-executive-grey text-sm font-medium">
+            Internacional
+        </button>
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white border border-primary/10 px-6 text-executive-grey text-sm font-medium">
+            Planejamento
+        </button>
+</div>
+<!-- Featured Article Card -->
+<section class="px-4 mb-8">
+<div class="bg-white rounded-xl overflow-hidden shadow-xl border border-primary/5">
+<div class="h-56 w-full bg-gray-200">
+<img alt="Financial District" class="w-full h-full object-cover grayscale opacity-90" data-alt="Grayscale image of a modern financial district skyscraper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ciiaXSW64oNwM9JOrQBi31m-z4feufiAy4--zwA8Zhv4sDD1MfkoqxggcPiq30kiq_4pJZwZAi8pLwzt10oSDMT2QF0k3Bf60yNhqCu2YMApzozz06pT_GZUfK_ldr3BsTaMTxJyDdRxPFsNPCgNi4nZkr0TgYru-iKcadlxjybtUjMGN9ttgeyY6r-0NtMFytjtoAUVoCgkRnGoJACq14c54e30tlWZOjz_ncJ6U4lcoyK9WPfgLm8-8MbUx8_DDgSyWg0dGTjI"/>
+</div>
+<div class="p-6">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 block">Destaque • Internacional</span>
+<h3 class="text-xl font-bold text-slate-900 mb-3">O Futuro dos Investimentos Internacionais em 2024</h3>
+<p class="text-slate-600 text-sm mb-5 leading-relaxed">
+                    Entenda como a diversificação global pode proteger seu patrimônio em cenários de alta volatilidade doméstica.
+                </p>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-slate-800 transition-colors">
+                    Ler Artigo <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="px-4 grid gap-6 mb-12">
+<!-- Card 1 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="h-40 bg-gray-100">
+<img alt="Stock Market Chart" class="w-full h-full object-cover grayscale" data-alt="Grayscale stock market chart on a computer monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByGHGc8MTNfHgONM8wI6gV4aYsG0pwj1sK9vBTOhVITrXuTLcXhcwF0zIxO1sAItFK7239GgoZK_SCbvaom28YSJO-gRFUz56Re8wa3OUoZ2Ef684opISh1rhYAVLnFCR3ltgVDp_He-kCKrVAqwzJM3-2-N_oBqIGuj-tCTXVtwu6uh6sjZctHDD5bqnHrTHOW8xsxjuqxl16-VeCPyF1f2nI19YDM28_SX9tF1NIcyZADkkQRu_PIuA7Y4RFUSiZD6mWsFjxwsiM"/>
+</div>
+<div class="p-4">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase">Macro</span>
+<span class="text-slate-400 text-[10px]">12 Out, 2023</span>
+</div>
+<h4 class="font-bold text-slate-900 text-base mb-2">Taxa Selic: O que esperar para o próximo trimestre?</h4>
+<p class="text-slate-600 text-xs line-clamp-2">Uma análise técnica sobre o movimento dos juros e impacto no crédito.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-primary/5">
+<div class="h-40 bg-gray-100">
+<img alt="Financial Planning" class="w-full h-full object-cover grayscale" data-alt="Grayscale top down view of a desk with financial documents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbwH3DmN_oSNTX04-jHpePGFivMWr0weO3HNFRFiyi__7TW68jzo4ka_OWMLaZxkK9n1j59D4YOdXDwcOn_-rAltu1WFjziBic98yH_rBoHaSTCJ8T1bNG-CMZg4RRgsw-_4xUfH-erZ1jImesCCw89y4Wpni_uu1GrBX72JoZRDJZ5xrmVsJ1lAbzVzc6Vic_v_krjtc4vvgi0-MimoWb03PVzUk_VYESEeFKc2EM11XvvJatgASj0UnApsoCHTqjJueo0PilyaQC"/>
+</div>
+<div class="p-4">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase">Planejamento</span>
+<span class="text-slate-400 text-[10px]">05 Out, 2023</span>
+</div>
+<h4 class="font-bold text-slate-900 text-base mb-2">Gestão Patrimonial: O guia definitivo para famílias</h4>
+<p class="text-slate-600 text-xs line-clamp-2">Estratégias de sucessão e organização de ativos multigeracionais.</p>
+</div>
+</div>
+</section>
+<!-- Newsletter Signup -->
+<section class="mx-4 mb-12 bg-white p-8 rounded-xl shadow-inner border border-primary/5 text-center">
+<h3 class="text-lg font-bold text-primary mb-2">Fique por dentro</h3>
+<p class="text-executive-grey text-sm mb-6">Receba nossas análises semanais diretamente no seu e-mail.</p>
+<div class="flex flex-col gap-3">
+<input class="w-full px-4 py-3 rounded-lg border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Seu melhor e-mail" type="email"/>
+<button class="bg-primary text-white py-3 rounded-lg font-bold">Inscrever-se</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-light py-12 px-6 border-t border-primary/10 overflow-hidden relative">
+<div class="absolute -bottom-10 -right-10 opacity-[0.03] select-none pointer-events-none">
+<h2 class="text-8xl font-bold text-primary">Suyane Melre</h2>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">account_balance_wallet</span>
+<span class="font-bold text-primary">Suyane Melre CFP®</span>
+</div>
+<p class="text-executive-grey text-xs mb-8">Consultoria de Investimentos Independente. Focada em transparência e resultados de longo prazo.</p>
+<div class="flex gap-4 mb-8">
+<button class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+<button class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">mail</span>
+</button>
+</div>
+<p class="text-[10px] text-executive-grey/50">© 2023 Suyane Melre. Todos os direitos reservados.</p>
+</div>
+</footer>
+<!-- Bottom Navigation Bar (iOS style) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-slate-200 px-6 py-2 pb-6 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-[10px] font-medium">Serviços</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Sobre</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">book</span>
+<span class="text-[10px] font-bold">Insights</span>
+</a>
+</nav>
+</body></html>

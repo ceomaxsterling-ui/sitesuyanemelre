@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fontes Personalizadas (Lexend e Inter) */
+  --font-lexend: "Lexend", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* Constantes de Cores para o novo Tema "Limpo Brancão" */
+  --color-navy: #1E293B;         
+  --color-navy-light: #334155;
+  --color-executive: #475569;
+  --color-silver: #E2E8F0;
+  --color-silver-light: #FFFFFF;
+  
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F8FAFC; 
+}
+
+@layer base {
+  body {
+    @apply bg-white text-executive font-inter antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-lexend text-navy tracking-tight;
+  }
+}
+
+/* ─── Marquee Animation ─── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transition: opacity 800ms ease-out, transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  
+  .reveal.from-below {
+    transform: translateY(40px);
+  }
+  
+  .reveal.from-left {
+    transform: translateX(-40px);
+  }
+  
+  .reveal.from-right {
+    transform: translateX(40px);
+  }
+
+  .reveal.scale-in {
+    transform: scale(0.95);
+  }
+  
+  .reveal.visible {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+
+  /* Typing Animation sem cursor */
+  .typing-effect {
+    overflow: hidden; /* Garante que o conteúdo não apareça até a animação */
+    white-space: nowrap; /* Mantém o conteúdo em uma única linha */
+    margin: 0 auto; /* Efeito de scroll durante a digitação */
+    animation: typing 2.5s steps(40, end) forwards;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* Ajuste no typing effect do mobile para comportar quebra de linhas */
+  @media (max-width: 768px) {
+    .typing-effect {
+      white-space: normal; /* Permite a quebra das linhas no mobile */
+      border-right: none;  /* Remove a barra animada se ocorrer quebra em blocos multilinhas */
+      animation: typing-mobile 3s steps(40, end);
+    }
+
+    @keyframes typing-mobile {
+      from { opacity: 0; clip-path: inset(0 100% 0 0); }
+      to { opacity: 1; clip-path: inset(0 0 0 0); }
+    }
+  }
+}

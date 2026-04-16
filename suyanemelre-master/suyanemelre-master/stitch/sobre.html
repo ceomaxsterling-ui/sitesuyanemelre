@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lexend:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1d283a",
+                        "background-light": "#f6f7f7",
+                        "background-dark": "#16181c",
+                        "accent-silver": "#E2E8F0",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "lexend": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</div>
+<h1 class="font-lexend text-lg font-bold leading-tight tracking-tight flex-1 text-center">Sobre Mim</h1>
+<div class="flex w-10 items-center justify-end">
+<button class="flex size-10 cursor-pointer items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">more_horiz</span>
+</button>
+</div>
+</header>
+<main class="flex-1 pb-24">
+<section class="p-6 md:p-10">
+<div class="flex flex-col gap-8 items-center lg:flex-row lg:justify-between">
+<div class="flex flex-col gap-4 text-center lg:text-left max-w-xl">
+<h2 class="font-lexend text-4xl font-bold leading-tight tracking-tight text-primary dark:text-slate-100">
+                            10+ Anos de Excelência no Mercado Financeiro
+                        </h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg">
+                            Suyane Melre, CFP® — Transformando a relação das pessoas com o dinheiro através de uma consultoria técnica e ética.
+                        </p>
+</div>
+<div class="w-full max-w-sm aspect-square rounded-xl overflow-hidden shadow-2xl relative border-4 border-white dark:border-slate-800">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<img alt="Professional portrait of Suyane Melre" class="h-full w-full object-cover" data-alt="Professional portrait of Suyane Melre financial consultant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChYPrnodylWdezddR88Smg0aiH1jnP6H0exHFECvcegeCtl1AlslBNlFU7ANEWYdABjoC6C1ihyDmEwqXkFt5M5TNkH0VXSgzLHAscmROorhAA1FZYC1yVOXs9Kg4dVhnSS3vikPCZXqY_VI9sxJZdy0AR51aO8ofO5EdTP0OvQnnoIgpqVv3MZd7Sjbji3SjrrmHP7s_4dV5Z0z1nwFQg6Lf-uUOb3_3OcuRaiQHpCW2QHByVLiXF3oEl_7dxm1jaQ1SXXSXRckGs"/>
+</div>
+</div>
+</section>
+<div class="w-full border-y border-accent-silver dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 py-6 overflow-hidden">
+<div class="flex justify-around items-center gap-8 px-4 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-slate-100">verified</span>
+<span class="font-bold text-sm tracking-widest">CFP®</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-slate-100">account_balance</span>
+<span class="font-bold text-sm tracking-widest uppercase">Anbima CEA</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-slate-100">gavel</span>
+<span class="font-bold text-sm tracking-widest uppercase">CVM Registrada</span>
+</div>
+</div>
+</div>
+<section class="bg-white dark:bg-background-dark py-16 px-6">
+<div class="max-w-4xl mx-auto flex flex-col gap-12">
+<div class="space-y-8">
+<h3 class="font-lexend text-2xl font-bold text-primary dark:text-slate-100">Minha Trajetória</h3>
+<div class="relative pl-8 border-l-2 border-primary/20 dark:border-slate-700 space-y-12">
+<div class="relative">
+<div class="absolute -left-[41px] top-1 size-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
+<h4 class="font-bold text-primary dark:text-slate-100">Início no Mercado Corporativo</h4>
+<p class="text-slate-600 dark:text-slate-400 mt-2">Atuação em grandes instituições financeiras, compreendendo as complexidades dos produtos bancários.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[41px] top-1 size-4 rounded-full bg-primary/40 border-4 border-white dark:border-background-dark"></div>
+<h4 class="font-bold text-primary dark:text-slate-100">Certificação CFP®</h4>
+<p class="text-slate-600 dark:text-slate-400 mt-2">Conquista da certificação máxima para planejadores financeiros no mundo.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[41px] top-1 size-4 rounded-full bg-primary/40 border-4 border-white dark:border-background-dark"></div>
+<h4 class="font-bold text-primary dark:text-slate-100">Consultoria Independente</h4>
+<p class="text-slate-600 dark:text-slate-400 mt-2">A transição para um modelo livre de conflitos de interesse, focado exclusivamente no cliente.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="p-6 bg-slate-50 dark:bg-slate-900/30">
+<h3 class="font-lexend text-2xl font-bold text-center mb-10 text-primary dark:text-slate-100">Diferencial Independente</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 dark:bg-primary/30 flex items-center justify-center text-primary dark:text-slate-100">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h4 class="font-bold">Livre de Conflitos</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Minha remuneração é transparente e direta, garantindo isenção total em cada recomendação.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 dark:bg-primary/30 flex items-center justify-center text-primary dark:text-slate-100">
+<span class="material-symbols-outlined">person_pin</span>
+</div>
+<h4 class="font-bold">Foco no Cliente</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">O seu objetivo é o meu norte. Não vendo produtos, entrego soluções personalizadas.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 dark:bg-primary/30 flex items-center justify-center text-primary dark:text-slate-100">
+<span class="material-symbols-outlined">tactic</span>
+</div>
+<h4 class="font-bold">Estratégia Sob Medida</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Cada portfólio é desenhado respeitando o seu momento de vida e tolerância a risco.</p>
+</div>
+</div>
+</section>
+<section class="m-6 p-10 rounded-xl bg-primary text-slate-100 text-center flex flex-col items-center gap-6 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="h-full w-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+</div>
+<h3 class="font-lexend text-2xl font-bold relative z-10">Pronto para transformar sua vida financeira?</h3>
+<p class="text-slate-300 max-w-md relative z-10">Agende uma conversa inicial sem compromisso e conheça meu método.</p>
+<button class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform relative z-10">
+                    Agendar Consulta
+                </button>
+</section>
+</main>
+<footer class="bg-slate-50 dark:bg-slate-900 py-12 px-6 border-t border-slate-200 dark:border-slate-800 relative overflow-hidden">
+<div class="absolute -bottom-10 left-0 right-0 opacity-[0.03] select-none pointer-events-none">
+<h2 class="text-[120px] font-lexend font-black whitespace-nowrap text-primary text-center">SUYANE MELRE</h2>
+</div>
+<div class="relative z-10 flex flex-col gap-8 max-w-4xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-sm uppercase tracking-widest text-primary dark:text-slate-100">Menu</h5>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Início</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Serviços</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Sobre Mim</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Contato</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-sm uppercase tracking-widest text-primary dark:text-slate-100">Social</h5>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Instagram</a>
+</div>
+<div class="col-span-2 flex flex-col gap-3 md:items-end">
+<h5 class="font-bold text-sm uppercase tracking-widest text-primary dark:text-slate-100">Legal</h5>
+<p class="text-xs text-slate-400 text-left md:text-right">Consultora registrada na CVM sob o código xxxx. O planejamento financeiro não garante rentabilidade futura. Investimentos envolvem riscos.</p>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+<p class="text-xs text-slate-400">© 2024 Suyane Melre CFP®. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+<nav class="fixed bottom-0 left-0 right-0 z-[60] flex gap-2 border-t border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg px-4 pb-6 pt-3 shadow-lg">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<p class="text-[10px] font-medium">Início</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined text-[24px]">business_center</span>
+<p class="text-[10px] font-medium">Serviços</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary dark:text-slate-100" href="#">
+<span class="material-symbols-outlined text-[24px] fill-1">person</span>
+<p class="text-[10px] font-bold">Sobre Mim</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+<p class="text-[10px] font-medium">Contato</p>
+</a>
+</nav>
+</div>
+</body></html>

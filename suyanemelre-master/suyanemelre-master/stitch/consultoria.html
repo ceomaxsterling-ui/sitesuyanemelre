@@ -1,0 +1,258 @@
+<html class="dark"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1d283a",
+            "background-light": "#f8fafc",
+            "background-dark": "#16181c",
+            "executive-grey": "#475569",
+            "silver-light": "#f8fafc"
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "2xl": "1.5rem",
+            "3xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<!-- Main Container -->
+<div class="relative flex min-h-screen flex-col">
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-slate-100 text-3xl">account_balance</span>
+<h1 class="text-lg font-bold tracking-tight text-primary dark:text-slate-100">Suyane Melre</h1>
+</div>
+<button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Tab Navigation -->
+<nav class="flex px-4 overflow-x-auto no-scrollbar">
+<a class="px-4 py-3 text-sm font-medium text-executive-grey dark:text-slate-400 border-b-2 border-transparent" href="#">Início</a>
+<a class="px-4 py-3 text-sm font-bold text-primary dark:text-slate-100 border-b-2 border-primary dark:border-slate-100" href="#">Serviços</a>
+<a class="px-4 py-3 text-sm font-medium text-executive-grey dark:text-slate-400 border-b-2 border-transparent" href="#">Sobre Mim</a>
+<a class="px-4 py-3 text-sm font-medium text-executive-grey dark:text-slate-400 border-b-2 border-transparent" href="#">Contato</a>
+</nav>
+</header>
+<!-- Page Hero -->
+<section class="relative bg-primary py-16 px-6 overflow-hidden">
+<!-- Background Decorative Element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-slate-100/5 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+<div class="relative z-10 max-w-xl mx-auto text-center">
+<h2 class="text-3xl font-black leading-tight text-silver-light mb-4">
+          Uma Abordagem Global para o seu Patrimônio
+        </h2>
+<p class="text-slate-400 text-sm max-w-xs mx-auto leading-relaxed">
+          Consultoria financeira CFP® especializada em excelência, blindagem e expansão internacional.
+        </p>
+</div>
+</section>
+<!-- The 4 Pillars Grid -->
+<section class="px-6 py-12">
+<h3 class="text-xl font-bold mb-8 text-primary dark:text-slate-100">Os 4 Pilares da Consultoria</h3>
+<div class="grid grid-cols-1 gap-6">
+<!-- Pillar 1 -->
+<div class="bg-primary p-8 rounded-3xl shadow-xl border border-slate-700/50">
+<div class="mb-4">
+<span class="material-symbols-outlined text-4xl text-slate-300">trending_up</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-4">Investimentos</h4>
+<p class="text-slate-300 text-sm mb-6">Otimização estratégica de portfólio para máxima performance.</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Alocação tática de ativos</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Seleção de produtos exclusivos</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Eficiência de custos operacionais</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-primary p-8 rounded-3xl shadow-xl border border-slate-700/50">
+<div class="mb-4">
+<span class="material-symbols-outlined text-4xl text-slate-300">public</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-4">Wealth Management</h4>
+<p class="text-slate-300 text-sm mb-6">Visão global e integrada de todo o seu ecossistema financeiro.</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Consolidação de ativos globais</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Gestão de fluxo de caixa</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Monitoramento de metas de longo prazo</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-primary p-8 rounded-3xl shadow-xl border border-slate-700/50">
+<div class="mb-4">
+<span class="material-symbols-outlined text-4xl text-slate-300">family_restroom</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-4">Planejamento Sucessório</h4>
+<p class="text-slate-300 text-sm mb-6">Proteção de legado e organização familiar eficiente.</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Estruturação de holdings</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Minimização de tributos sucessórios</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Proteção jurídica de beneficiários</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-primary p-8 rounded-3xl shadow-xl border border-slate-700/50">
+<div class="mb-4">
+<span class="material-symbols-outlined text-4xl text-slate-300">security</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-4">Análise de Risco</h4>
+<p class="text-slate-300 text-sm mb-6">Blindagem patrimonial e gestão de imprevistos.</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Análise de passivos contingentes</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Seguros de vida e invalidez</span>
+</li>
+<li class="flex items-start gap-2 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-blue-400 text-sm mt-0.5">check_circle</span>
+<span>Estratégias de Asset Shielding</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Methodology Step-by-Step -->
+<section class="bg-silver-light dark:bg-slate-900/50 py-16 px-6">
+<div class="max-w-xl mx-auto">
+<h3 class="text-2xl font-bold text-primary dark:text-slate-100 text-center mb-12">Nossa Metodologia</h3>
+<div class="relative space-y-12">
+<!-- Connector Line -->
+<div class="absolute left-6 top-4 bottom-4 w-0.5 bg-slate-300 dark:bg-slate-700"></div>
+<!-- Step 1 -->
+<div class="relative flex items-start gap-6">
+<div class="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg">1</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 flex-1">
+<h5 class="text-lg font-bold text-primary dark:text-slate-100 mb-2">Objetivos</h5>
+<p class="text-executive-grey dark:text-slate-400 text-sm">Compreensão profunda das metas familiares, aspirações de vida e tolerância ao risco.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-6">
+<div class="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg">2</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 flex-1">
+<h5 class="text-lg font-bold text-primary dark:text-slate-100 mb-2">Análise</h5>
+<p class="text-executive-grey dark:text-slate-400 text-sm">Radiografia completa do patrimônio atual, eficiência tributária e vulnerabilidades.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-6">
+<div class="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg">3</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 flex-1">
+<h5 class="text-lg font-bold text-primary dark:text-slate-100 mb-2">Estratégia</h5>
+<p class="text-executive-grey dark:text-slate-400 text-sm">Desenvolvimento do plano personalizado com alocação global e blindagem jurídica.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-start gap-6">
+<div class="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg">4</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 flex-1">
+<h5 class="text-lg font-bold text-primary dark:text-slate-100 mb-2">Acompanhamento</h5>
+<p class="text-executive-grey dark:text-slate-400 text-sm">Revisões periódicas e ajustes constantes para manter a rota dos seus objetivos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="bg-primary py-16 px-6 text-center">
+<h3 class="text-2xl font-bold text-white mb-6">Pronto para elevar seu patamar financeiro?</h3>
+<p class="text-slate-300 text-sm mb-10 max-w-xs mx-auto">Inicie sua jornada com uma análise técnica do seu cenário atual.</p>
+<button class="w-full max-w-sm bg-white text-primary font-bold py-4 rounded-full shadow-lg hover:bg-slate-100 transition-all active:scale-95">
+        Agendar Diagnóstico Gratuito
+      </button>
+</section>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark py-12 px-6 border-t border-slate-200 dark:border-slate-800">
+<div class="text-center">
+<h4 class="text-4xl font-black text-slate-200 dark:text-slate-800/40 select-none mb-6">Suyane Melre</h4>
+<div class="flex justify-center gap-6 mb-8">
+<a class="text-executive-grey dark:text-slate-500 hover:text-primary dark:hover:text-slate-100" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-executive-grey dark:text-slate-500 hover:text-primary dark:hover:text-slate-100" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="text-executive-grey dark:text-slate-500 hover:text-primary dark:hover:text-slate-100" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+</div>
+<p class="text-xs text-executive-grey dark:text-slate-500">© 2024 Suyane Melre Consultoria CFP®. Todos os direitos reservados.</p>
+</div>
+</footer>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<div class="sticky bottom-0 z-50 flex border-t border-slate-200 dark:border-slate-800 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md px-4 pb-6 pt-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-executive-grey dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-medium leading-none">Início</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary dark:text-slate-100" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">work</span>
+<p class="text-[10px] font-bold leading-none">Serviços</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-executive-grey dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-medium leading-none">Sobre</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-executive-grey dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">mail</span>
+<p class="text-[10px] font-medium leading-none">Contato</p>
+</a>
+</div>
+</div>
+</body></html>

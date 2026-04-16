@@ -1,0 +1,69 @@
+{
+  "name": "projects/14610748245177721276",
+  "projectId": "14610748245177721276",
+  "title": "Suyane Melre CFP® Landing Page",
+  "visibility": "PRIVATE",
+  "projectType": "TEXT_TO_UI_PRO",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "LIGHT",
+    "font": "LEXEND",
+    "roundness": "ROUND_FULL",
+    "customColor": "#162641",
+    "saturation": 3
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  },
+  "screens": {
+    "home": {
+      "id": "f33998cfa8e3497899e0fe054f551419",
+      "sourceScreen": "projects/14610748245177721276/screens/f33998cfa8e3497899e0fe054f551419",
+      "width": 2560,
+      "height": 12158,
+      "deviceType": "DESKTOP",
+      "title": "Suyane Melre CFP® Landing Page"
+    },
+    "hero-marquee": {
+      "id": "6a59d358550f441baa04a8374156239d",
+      "sourceScreen": "projects/14610748245177721276/screens/6a59d358550f441baa04a8374156239d",
+      "width": 2560,
+      "height": 2428,
+      "deviceType": "DESKTOP",
+      "title": "Hero & Certificações: Suyane Melre CFP®"
+    },
+    "sobre": {
+      "id": "5c58b19456004f259d9db335e27aa64f",
+      "sourceScreen": "projects/14610748245177721276/screens/5c58b19456004f259d9db335e27aa64f",
+      "width": 780,
+      "height": 6482,
+      "deviceType": "MOBILE",
+      "title": "Sobre Mim: Trajetória Suyane Melre CFP®"
+    },
+    "blog": {
+      "id": "7d2ad67227564eea97cccabfdddff73a",
+      "sourceScreen": "projects/14610748245177721276/screens/7d2ad67227564eea97cccabfdddff73a",
+      "width": 780,
+      "height": 4638,
+      "deviceType": "MOBILE",
+      "title": "Insights & Educação Financeira: Blog Suyane Melre"
+    },
+    "consultoria": {
+      "id": "f8cd7926002c4a95a218a8256f132474",
+      "sourceScreen": "projects/14610748245177721276/screens/f8cd7926002c4a95a218a8256f132474",
+      "width": 780,
+      "height": 7196,
+      "deviceType": "MOBILE",
+      "title": "Serviços e Metodologia: Consultoria Suyane Melre"
+    },
+    "post": {
+      "id": "30e0451fd92447e494258c92fe2d4522",
+      "sourceScreen": "projects/14610748245177721276/screens/30e0451fd92447e494258c92fe2d4522",
+      "width": 780,
+      "height": 5356,
+      "deviceType": "MOBILE",
+      "title": "Artigo: Impacto da Selic no Portfólio"
+    }
+  }
+}
