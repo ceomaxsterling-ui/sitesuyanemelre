@@ -401,11 +401,11 @@ export const Diagnostico: React.FC = () => {
 
           <div className="flex flex-col gap-4">
             <h2 className="font-lexend font-bold text-4xl text-navy tracking-tight">
-              {wantsContact ? 'Diagnóstico e 3 E-books Enviados!' : 'Parabéns por preencher o formulário!'}
+              {wantsContact ? '3 E-books Enviados!' : 'Parabéns por preencher o formulário!'}
             </h2>
             <p className="font-inter text-[#475569] text-lg leading-relaxed max-w-lg">
               {wantsContact 
-                ? 'Verifique seu e-mail! Acabamos de enviar os seus 3 materiais exclusivos e o resumo do seu diagnóstico. Em breve nossa equipe também entrará em contato para agendar uma conversa sobre seus objetivos.'
+                ? 'Verifique seu e-mail! Acabamos de enviar os seus 3 materiais exclusivos. Em breve nossa equipe também entrará em contato para agendar uma conversa sobre seus objetivos.'
                 : 'Seu presente exclusivo já está a caminho! Acabamos de enviar os seus 3 e-books para o e-mail informado. Aproveite este conteúdo gratuito para transformar sua inteligência financeira, sem qualquer compromisso.'
               }
             </p>
